@@ -1,0 +1,178 @@
+.yrn-label-of-switch,
+.yrn-label-of-input {
+	margin-top: 6px;
+}
+
+.yrn-hide-content,
+.yrn-hide {
+	display: none;
+}
+
+.yrn-hide {
+	display: none !important;
+}
+
+.yrn-label-of-color {
+	margin-top: 5px;
+}
+
+.yrn-label-of-select {
+	margin-top: 3px;
+}
+
+.select2-container {
+	width: 100% !important;
+}
+
+.yrn-current-wrapper {
+	max-width: 400px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+}
+
+.yrn-current-header {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.yrn-current-header,.yrn-content-wrapper {
+	padding: 10px;
+}
+
+.yrn-remove-condition {
+	float: right;
+	cursor: pointer;
+	color: red;
+}
+
+.yrn-option-label {
+	vertical-align: top;
+}
+
+.yrn-rotate-180::before {
+	transform: rotate(180deg);
+}
+
+.yrn-support-button-red {
+	border: 2px solid #e74c3c !important;
+	color: #e74c3c !important;
+	border-radius: 5px;
+	cursor: pointer !important;
+	padding: 5px 25px 5px 26px;
+	text-transform: uppercase;
+	font-weight: 600;
+	outline: 0;
+	transition: background-color .2s ease-out;
+	text-decoration: none;
+	margin: 5px auto;
+}
+
+.yrn-all-options-wrapper div:only-child .yrn-remove-condition {
+	display: none !important;
+}
+
+/*Copy to clipboard*/
+.yrn-tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.yrn-tooltip .yrn-tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.yrn-tooltip .yrn-tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.yrn-tooltip:hover .yrn-tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*Copy to clipboard*/
+
+/*Checkbox slider start*/
+/* The switch - the box around the slider */
+.yrn-switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.yrn-switch input {display:none;}
+
+/* The slider */
+.yrn-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	transform: scale(0.8, 0.8);
+}
+
+.yrn-slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.yrn-range-slider-wrapper {
+	margin-top: 17px !important;
+}
+
+input:checked + .yrn-slider {
+	background-color: #2196F3;
+}
+
+input:focus + .yrn-slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .yrn-slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.yrn-slider.yrn-round {
+	border-radius: 34px;
+}
+
+.yrn-slider.yrn-round:before {
+	border-radius: 50%;
+}
+/*Checkbox slider end*/
